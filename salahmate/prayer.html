@@ -1,1 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="css/prayer.css">
+<title>Phyo Prayer</title>
+</head>
 
+<body>
+<!-- header-premium -->
+<div class="ultra-header">
+<div class="header-content">
+<div class="moon">🌙</div>
+<h1 class="app-title">Phyo Prayer</h1>
+<div class="header-info">
+<div class="date" id="todayDate">
+Loading date...
+</div>
+</div>
+</div>
+  
+
+</div>
+
+
+
+
+<!-- NEXT PRAYER -->
+<div class="next-card">
+<div class="next-title">Next Prayer</div>
+<div class="next-time">
+<span id="nextPrayer">--</span>
+</div>
+<div class="progress">
+<div id="progressBar"></div>
+</div>
+<div class="countdown" id="countdown">
+Loading...
+</div>
+
+</div>
+
+<!-- PRAYER TIMES -->
+<div class="prayer-list">
+
+<div class="prayer-row" id="row-fajr">
+<div class="prayer-left">🌅 Fajr</div>
+<div class="prayer-time" id="fajr">--</div>
+</div>
+
+<div class="prayer-row" id="row-dhuhr">
+<div class="prayer-left">☀️ Dhuhr</div>
+<div class="prayer-time" id="dhuhr">--</div>
+</div>
+
+<div class="prayer-row" id="row-asr">
+<div class="prayer-left">🌤 Asr</div>
+<div class="prayer-time" id="asr">--</div>
+</div>
+
+<div class="prayer-row" id="row-maghrib">
+<div class="prayer-left">🌇 Maghrib</div>
+<div class="prayer-time" id="maghrib">--</div>
+</div>
+
+<div class="prayer-row" id="row-isha">
+<div class="prayer-left">🌙 Isha</div>
+<div class="prayer-time" id="isha">--</div>
+</div>
+
+</div>
+
+<div class="bottom-nav">
+
+<a href="home.html" class="nav-item active">
+<div class="icon-bg">
+<span class="nav-icon">🏠</span>
+</div>
+<span class="nav-label">Home</span>
+</a>
+
+<a href="prayer.html" class="nav-item">
+<div class="icon-bg">
+<span class="nav-icon">🕌</span>
+</div>
+<span class="nav-label">Prayer</span>
+</a>
+
+<a href="quran.html" class="nav-item">
+<div class="icon-bg">
+<span class="nav-icon">📖</span>
+</div>
+<span class="nav-label">Quran</span>
+</a>
+
+<a href="settings.html" class="nav-item">
+<div class="icon-bg">
+<span class="nav-icon">⚙️</span>
+</div>
+<span class="nav-label">Settings</span>
+</a>
+
+</div>
+  
+<script src="js/prayer.js"></script>
+
+<script id="date_script">
+
+const dateElement = document.getElementById("todayDate");
+
+const now = new Date();
+
+dateElement.innerText =
+now.toLocaleDateString("en-MY",{
+weekday:"long",
+day:"numeric",
+month:"long",
+year:"numeric"
+});
+
+</script>
+
+
+
+</body>
+</html>
